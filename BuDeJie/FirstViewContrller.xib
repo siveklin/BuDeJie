@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewContrller">
+            <connections>
+                <outlet property="adView" destination="DvM-9k-7ud" id="2yD-oI-sf1"/>
+                <outlet property="launchImage" destination="bxU-q2-rpr" id="8Ub-Mc-Mbk"/>
+                <outlet property="skipBtn" destination="Z2P-AN-dTL" id="fas-Oj-gd2"/>
+                <outlet property="view" destination="zyB-G7-7lB" id="NnF-2x-VQB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zyB-G7-7lB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="bxU-q2-rpr">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DvM-9k-7ud">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2P-AN-dTL">
+                    <rect key="frame" x="275" y="20" width="80" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="aDq-Ji-Mn9"/>
+                        <constraint firstAttribute="height" constant="30" id="sGS-WG-p3r"/>
+                    </constraints>
+                    <state key="normal" title="跳转 (3)"/>
+                    <connections>
+                        <action selector="skipBtn:" destination="-1" eventType="touchUpInside" id="pFj-Z8-ayL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.81013347410000003" blue="0.15405017530000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bxU-q2-rpr" secondAttribute="trailing" id="34z-kc-nDD"/>
+                <constraint firstAttribute="trailing" secondItem="DvM-9k-7ud" secondAttribute="trailing" id="367-fN-sKQ"/>
+                <constraint firstItem="bxU-q2-rpr" firstAttribute="top" secondItem="zyB-G7-7lB" secondAttribute="top" id="CCK-y5-A2K"/>
+                <constraint firstItem="bxU-q2-rpr" firstAttribute="leading" secondItem="zyB-G7-7lB" secondAttribute="leading" id="KOX-TC-8kn"/>
+                <constraint firstItem="DvM-9k-7ud" firstAttribute="leading" secondItem="zyB-G7-7lB" secondAttribute="leading" id="Mmk-tX-49z"/>
+                <constraint firstAttribute="bottom" secondItem="bxU-q2-rpr" secondAttribute="bottom" id="Q0A-4g-RI0"/>
+                <constraint firstAttribute="trailing" secondItem="Z2P-AN-dTL" secondAttribute="trailing" constant="20" id="mLr-GG-bAu"/>
+                <constraint firstItem="DvM-9k-7ud" firstAttribute="top" secondItem="zyB-G7-7lB" secondAttribute="top" id="o7n-4K-VxY"/>
+                <constraint firstAttribute="bottom" secondItem="DvM-9k-7ud" secondAttribute="bottom" id="urz-Ru-l0h"/>
+                <constraint firstItem="Z2P-AN-dTL" firstAttribute="top" secondItem="zyB-G7-7lB" secondAttribute="top" constant="20" id="wuZ-Ta-mQv"/>
+            </constraints>
+            <point key="canvasLocation" x="-85" y="67"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LaunchImage" width="320" height="480"/>
+    </resources>
+</document>

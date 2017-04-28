@@ -1,0 +1,21 @@
+//
+//  BuDeJie.pch
+//  BuDeJie
+//
+//  Created by Qlinchao on 17/3/30.
+//  Copyright ©2017年 JAYA. All rights reserved.
+///Users/Qlinchao/Desktop/BuDeJie/BuDeJie/BuDeJie/BuDeJie.pch
+//
+//
+
+#ifndef BuDeJie_pch
+#define BuDeJie_pch
+#import "InterfaceModel.h"
+#import "QLCUser.h"
+#import "QLCInterFace.h"
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* BuDeJie_pch */
